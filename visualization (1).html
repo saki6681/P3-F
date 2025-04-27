@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.1.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-0f74c1b63bbe33c1a2569df86c02e20a"},
+  "mark": {"type": "area"},
+  "encoding": {
+    "color": {
+      "field": "ROUND",
+      "legend": {"title": "Round"},
+      "scale": {
+        "domain": [
+          "FIRST ROUND",
+          "SECOND ROUND",
+          "SWEET 16",
+          "ELITE 8",
+          "FINAL 4"
+        ],
+        "range": ["#0d43cb", "#c61015", "#f39d3a", "#e01f60", "#7e5d3e"]
+      },
+      "sort": ["FIRST ROUND", "SECOND ROUND", "SWEET 16", "ELITE 8", "FINAL 4"],
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "YEAR", "type": "ordinal"},
+      {"field": "ROUND", "type": "nominal"},
+      {"field": "UPSETS", "type": "quantitative"}
+    ],
+    "x": {"axis": {"title": null}, "field": "YEAR", "type": "ordinal"},
+    "y": {
+      "axis": {"title": "Number of Upsets"},
+      "field": "UPSETS",
+      "type": "quantitative"
+    }
+  },
+  "params": [
+    {
+      "name": "Select",
+      "select": {"type": "point", "fields": ["ROUND"]},
+      "bind": "legend"
+    }
+  ],
+  "title": "Total Upsets Breakdown by Round (Click Legend to Explore)",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-0f74c1b63bbe33c1a2569df86c02e20a": [
+      {"YEAR": 2024, "ROUND": "FIRST ROUND", "UPSETS": 8},
+      {"YEAR": 2023, "ROUND": "FIRST ROUND", "UPSETS": 5},
+      {"YEAR": 2022, "ROUND": "FIRST ROUND", "UPSETS": 7},
+      {"YEAR": 2021, "ROUND": "FIRST ROUND", "UPSETS": 9},
+      {"YEAR": 2019, "ROUND": "FIRST ROUND", "UPSETS": 8},
+      {"YEAR": 2018, "ROUND": "FIRST ROUND", "UPSETS": 6},
+      {"YEAR": 2017, "ROUND": "FIRST ROUND", "UPSETS": 5},
+      {"YEAR": 2016, "ROUND": "FIRST ROUND", "UPSETS": 10},
+      {"YEAR": 2015, "ROUND": "FIRST ROUND", "UPSETS": 5},
+      {"YEAR": 2014, "ROUND": "FIRST ROUND", "UPSETS": 7},
+      {"YEAR": 2013, "ROUND": "FIRST ROUND", "UPSETS": 8},
+      {"YEAR": 2012, "ROUND": "FIRST ROUND", "UPSETS": 9},
+      {"YEAR": 2011, "ROUND": "FIRST ROUND", "UPSETS": 6},
+      {"YEAR": 2010, "ROUND": "FIRST ROUND", "UPSETS": 8},
+      {"YEAR": 2009, "ROUND": "FIRST ROUND", "UPSETS": 8},
+      {"YEAR": 2008, "ROUND": "FIRST ROUND", "UPSETS": 6},
+      {"YEAR": 2024, "ROUND": "SECOND ROUND", "UPSETS": 1},
+      {"YEAR": 2023, "ROUND": "SECOND ROUND", "UPSETS": 4},
+      {"YEAR": 2022, "ROUND": "SECOND ROUND", "UPSETS": 5},
+      {"YEAR": 2021, "ROUND": "SECOND ROUND", "UPSETS": 6},
+      {"YEAR": 2019, "ROUND": "SECOND ROUND", "UPSETS": 0},
+      {"YEAR": 2018, "ROUND": "SECOND ROUND", "UPSETS": 5},
+      {"YEAR": 2017, "ROUND": "SECOND ROUND", "UPSETS": 4},
+      {"YEAR": 2016, "ROUND": "SECOND ROUND", "UPSETS": 2},
+      {"YEAR": 2015, "ROUND": "SECOND ROUND", "UPSETS": 3},
+      {"YEAR": 2014, "ROUND": "SECOND ROUND", "UPSETS": 5},
+      {"YEAR": 2013, "ROUND": "SECOND ROUND", "UPSETS": 3},
+      {"YEAR": 2012, "ROUND": "SECOND ROUND", "UPSETS": 2},
+      {"YEAR": 2011, "ROUND": "SECOND ROUND", "UPSETS": 4},
+      {"YEAR": 2010, "ROUND": "SECOND ROUND", "UPSETS": 5},
+      {"YEAR": 2009, "ROUND": "SECOND ROUND", "UPSETS": 0},
+      {"YEAR": 2008, "ROUND": "SECOND ROUND", "UPSETS": 2},
+      {"YEAR": 2024, "ROUND": "SWEET 16", "UPSETS": 4},
+      {"YEAR": 2023, "ROUND": "SWEET 16", "UPSETS": 3},
+      {"YEAR": 2022, "ROUND": "SWEET 16", "UPSETS": 4},
+      {"YEAR": 2021, "ROUND": "SWEET 16", "UPSETS": 2},
+      {"YEAR": 2019, "ROUND": "SWEET 16", "UPSETS": 1},
+      {"YEAR": 2018, "ROUND": "SWEET 16", "UPSETS": 3},
+      {"YEAR": 2017, "ROUND": "SWEET 16", "UPSETS": 2},
+      {"YEAR": 2016, "ROUND": "SWEET 16", "UPSETS": 0},
+      {"YEAR": 2015, "ROUND": "SWEET 16", "UPSETS": 1},
+      {"YEAR": 2014, "ROUND": "SWEET 16", "UPSETS": 3},
+      {"YEAR": 2013, "ROUND": "SWEET 16", "UPSETS": 2},
+      {"YEAR": 2012, "ROUND": "SWEET 16", "UPSETS": 2},
+      {"YEAR": 2011, "ROUND": "SWEET 16", "UPSETS": 3},
+      {"YEAR": 2010, "ROUND": "SWEET 16", "UPSETS": 2},
+      {"YEAR": 2009, "ROUND": "SWEET 16", "UPSETS": 0},
+      {"YEAR": 2008, "ROUND": "SWEET 16", "UPSETS": 1},
+      {"YEAR": 2024, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2023, "ROUND": "ELITE 8", "UPSETS": 2},
+      {"YEAR": 2022, "ROUND": "ELITE 8", "UPSETS": 0},
+      {"YEAR": 2021, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2019, "ROUND": "ELITE 8", "UPSETS": 2},
+      {"YEAR": 2018, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2017, "ROUND": "ELITE 8", "UPSETS": 2},
+      {"YEAR": 2016, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2015, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2014, "ROUND": "ELITE 8", "UPSETS": 2},
+      {"YEAR": 2013, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2012, "ROUND": "ELITE 8", "UPSETS": 0},
+      {"YEAR": 2011, "ROUND": "ELITE 8", "UPSETS": 3},
+      {"YEAR": 2010, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2009, "ROUND": "ELITE 8", "UPSETS": 1},
+      {"YEAR": 2008, "ROUND": "ELITE 8", "UPSETS": 0},
+      {"YEAR": 2024, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2023, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2022, "ROUND": "FINAL 4", "UPSETS": 1},
+      {"YEAR": 2021, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2019, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2018, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2017, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2016, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2015, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2014, "ROUND": "FINAL 4", "UPSETS": 2},
+      {"YEAR": 2013, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2012, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2011, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2010, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2009, "ROUND": "FINAL 4", "UPSETS": 0},
+      {"YEAR": 2008, "ROUND": "FINAL 4", "UPSETS": 0}
+    ]
+  }
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>

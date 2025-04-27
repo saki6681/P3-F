@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.1.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "2024 Conf": "ACC",
+          "Avg Funding": 9918107.953271028,
+          "Avg Rank": 35.09345794392523,
+          "Team Count": 107
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Avg Funding": 6705266.76744186,
+          "Avg Rank": 13.728682170542635,
+          "Team Count": 129
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Avg Funding": 8755799.118421054,
+          "Avg Rank": 19.899122807017545,
+          "Team Count": 228
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Avg Funding": 2834532.8048780486,
+          "Avg Rank": 43.65853658536585,
+          "Team Count": 41
+        },
+        {
+          "2024 Conf": "MW",
+          "Avg Funding": 2000558,
+          "Avg Rank": 68,
+          "Team Count": 16
+        },
+        {
+          "2024 Conf": "SEC",
+          "Avg Funding": 13708190.301675977,
+          "Avg Rank": 14.027932960893855,
+          "Team Count": 179
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "values": [
+        {
+          "2024 Conf": "ACC",
+          "Avg Funding": 9918107.953271028,
+          "Avg Rank": 35.09345794392523,
+          "Team Count": 107
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Avg Funding": 6705266.76744186,
+          "Avg Rank": 13.728682170542635,
+          "Team Count": 129
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Avg Funding": 8755799.118421054,
+          "Avg Rank": 19.899122807017545,
+          "Team Count": 228
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Avg Funding": 2834532.8048780486,
+          "Avg Rank": 43.65853658536585,
+          "Team Count": 41
+        },
+        {
+          "2024 Conf": "MW",
+          "Avg Funding": 2000558,
+          "Avg Rank": 68,
+          "Team Count": 16
+        },
+        {
+          "2024 Conf": "SEC",
+          "Avg Funding": 13708190.301675977,
+          "Avg Rank": 14.027932960893855,
+          "Team Count": 179
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "regression",
+          "y": "Avg Rank",
+          "x": "Avg Funding",
+          "as": ["Avg Funding", "Avg Rank"]
+        },
+        {"type": "project", "fields": ["Avg Funding", "Avg Rank"]}
+      ]
+    },
+    {"name": "source_1", "values": [{"Avg Funding": 2000558, "Avg Rank": 68}]},
+    {
+      "name": "data_0_size_domain_Team Count",
+      "values": [{"min": 16, "max": 228}]
+    }
+  ],
+  "marks": [
+    {
+      "type": "symbol",
+      "name": "layer_0_marks",
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "shape": {"value": "circle"},
+          "size": {"field": "Team Count", "scale": "size"},
+          "x": {"field": "Avg Funding", "scale": "x"},
+          "fill": {"field": "2024 Conf", "scale": "color"},
+          "opacity": {"value": 0.7},
+          "y": {"field": "Avg Rank", "scale": "y"},
+          "tooltip": {
+            "signal": "{\"Conference\": isValid(datum[\"2024 Conf\"]) ? datum[\"2024 Conf\"] : \"\"+datum[\"2024 Conf\"], \"Avg Funding\": format(datum[\"Avg Funding\"], \",\"), \"Avg Rank\": format(datum[\"Avg Rank\"], \"\"), \"Team Count\": format(datum[\"Team Count\"], \"\")}"
+          }
+        }
+      },
+      "style": ["circle"]
+    },
+    {
+      "type": "line",
+      "name": "layer_1_marks",
+      "from": {"data": "data_1"},
+      "sort": {"field": "x"},
+      "encode": {
+        "update": {
+          "y": {"field": "Avg Rank", "scale": "y"},
+          "stroke": {"value": "black"},
+          "strokeDash": {"value": [5, 5]},
+          "defined": {
+            "signal": "isValid(datum[\"Avg Funding\"]) && isFinite(+datum[\"Avg Funding\"]) && isValid(datum[\"Avg Rank\"]) && isFinite(+datum[\"Avg Rank\"])"
+          },
+          "x": {"field": "Avg Funding", "scale": "x"}
+        }
+      },
+      "style": ["line"]
+    },
+    {
+      "type": "text",
+      "name": "layer_2_marks",
+      "from": {"data": "source_1"},
+      "encode": {
+        "update": {
+          "dx": {"value": 265},
+          "y": {"field": "Avg Rank", "scale": "y"},
+          "fill": {"value": "gray"},
+          "dy": {"value": -310},
+          "x": {"field": "Avg Funding", "scale": "x"},
+          "fontWeight": {"value": "bold"},
+          "align": {"value": "center"},
+          "fontSize": {"value": 12},
+          "baseline": {"value": "middle"},
+          "text": {"value": "← Overperformer"}
+        }
+      },
+      "style": ["text"]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Avg Funding"},
+          {"data": "data_1", "field": "Avg Funding"},
+          {"data": "source_1", "field": "Avg Funding"}
+        ]
+      },
+      "range": [0, {"signal": "width"}],
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_0", "field": "Avg Rank"},
+          {"data": "data_1", "field": "Avg Rank"},
+          {"data": "source_1", "field": "Avg Rank"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "zero": true,
+      "nice": true,
+      "reverse": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["ACC", "Big 12", "Big Ten", "Big-12", "MW", "SEC"],
+      "range": [
+        "#0d43cb",
+        "#c61015",
+        "#f39d3a",
+        "#e01f60",
+        "#7e5d3e",
+        "#2aa198"
+      ]
+    },
+    {
+      "name": "size",
+      "type": "linear",
+      "domain": [
+        {"signal": "(data(\"data_0_size_domain_Team Count\")[0] || {}).min"},
+        {"signal": "(data(\"data_0_size_domain_Team Count\")[0] || {}).max"}
+      ],
+      "range": [4, 361],
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0,
+      "title": "Avg NIL Funding per Conference ($)",
+      "orient": "bottom",
+      "grid": false,
+      "labelFlush": true
+    },
+    {
+      "scale": "y",
+      "grid": false,
+      "orient": "left",
+      "labelOverlap": true,
+      "title": "Avg Tournament Power Rating",
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "title": {
+    "text": "Conference-Level NIL Funding vs Tournament Performance",
+    "frame": "group"
+  },
+  "width": 600,
+  "style": "cell",
+  "background": "white",
+  "height": 400,
+  "padding": 5,
+  "legends": [
+    {
+      "title": "Conference",
+      "fill": "color",
+      "symbolType": "circle",
+      "encode": {"symbols": {"update": {"opacity": {"value": 0.7}}}}
+    },
+    {
+      "title": "Number of Teams",
+      "size": "size",
+      "symbolType": "circle",
+      "encode": {
+        "symbols": {
+          "update": {
+            "fill": {"value": "black"},
+            "fillOpacity": {"value": 0.7},
+            "opacity": {"value": 0.7},
+            "stroke": {"value": "transparent"}
+          }
+        }
+      }
+    }
+  ],
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
