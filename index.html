@@ -1,0 +1,3138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.1.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.0.1"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "data": [
+    {
+      "name": "_server_source_0",
+      "values": [
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6414683,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6414683,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6414683,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6414683,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6414683,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5689877,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arizona State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11544039,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11544039,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11544039,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11544039,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11544039,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11588953,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11588953,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11588953,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11588953,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 3932903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "California"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 3308993,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Central Florida"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 3984845,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 3984845,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 3984845,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 3984845,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15258374,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15258374,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5337719,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5337719,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 15802237,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 15802237,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 15802237,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 15802237,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 10034191,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Florida State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 18326566,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Georgia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 4281809,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Georgia Tech"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 2098333,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 2098333,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 2098333,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 2098333,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 2098333,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9311667,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9311667,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9311667,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13631160,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13631160,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13631160,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9698730,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9698730,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9698730,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9698730,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9698730,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7551312,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Iowa State"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7427957,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7121436,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kansas State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11254204,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 9443439,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 9443439,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 20137141,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 20137141,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 20137141,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3735112,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3735112,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3735112,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3735112,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3735112,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16357054,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13035471,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Michigan State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 7171424,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 7171424,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 8872378,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Mississippi"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 6467166,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Mississippi State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 7146859,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 7146859,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 7146859,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 7973918,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Nebraska"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8355617,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 5935429,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "North Carolina State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 20253400,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Ohio State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 14817595,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 14817595,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 14817595,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 14817595,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5338583,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oklahoma State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 10623807,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 10623807,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 10623807,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 10623807,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13793489,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Penn State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5510579,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3624816,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 3624816,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 9554700,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "South Carolina"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11602164,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11602164,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11602164,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11602164,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 11602164,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22272474,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22272474,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22272474,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22272474,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22272474,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 17228714,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 17228714,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 17228714,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6986182,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6986182,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6986182,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6986182,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 6986182,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5919423,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5919423,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5919423,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5919423,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 5919423,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 7252969,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Utah"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12780300,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 7732903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 7732903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 7732903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 7732903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 7732903,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9406794,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Washington"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5495362,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5495362,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5495362,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5495362,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 5495362,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 8982406,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 8982406,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 8982406,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 8982406,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 8982406,
+          "Category": "Funding",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19164426,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19164426,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19164426,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19164426,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19164426,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14144182,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arizona State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 48073959,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 48073959,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 48073959,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 48073959,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 48073959,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34140396,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34140396,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34140396,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34140396,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 8073384,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "California"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5782943,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Central Florida"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 9631998,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 9631998,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 9631998,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 9631998,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 31980356,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 31980356,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19175198,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19175198,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34784702,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34784702,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34784702,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34784702,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 18773797,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Florida State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 37192353,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Georgia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 12303309,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Georgia Tech"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5191579,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5191579,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5191579,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5191579,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 5191579,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 15693517,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 15693517,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 15693517,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 21278997,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 21278997,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 21278997,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 26416829,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 26416829,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 26416829,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 26416829,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 26416829,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 22909710,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Iowa State"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 17933864,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 15221310,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kansas State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 40538111,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 27045669,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 27045669,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46594942,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46594942,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46594942,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 12735792,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 12735792,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 12735792,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 12735792,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 12735792,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 55266135,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 25178673,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Michigan State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 19252536,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 19252536,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 19574652,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Mississippi"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 16737350,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Mississippi State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 13929479,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 13929479,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 13929479,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38946701,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Nebraska"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30224001,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21214362,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "North Carolina State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 59649921,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Ohio State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46977771,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46977771,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46977771,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 46977771,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 12882021,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oklahoma State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24357945,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24357945,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24357945,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24357945,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44678657,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Penn State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16617614,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13049333,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 13049333,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 24301862,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "South Carolina"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35110289,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35110289,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35110289,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35110289,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35110289,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 57543166,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 57543166,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 57543166,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 57543166,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 57543166,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 50624287,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 50624287,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 50624287,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13560519,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13560519,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13560519,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13560519,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13560519,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 17494361,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 17494361,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 17494361,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 17494361,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 17494361,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 15286819,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Utah"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15114983,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21168159,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21168159,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21168159,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21168159,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 21168159,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 29198790,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Washington"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 18763866,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 18763866,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 18763866,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 18763866,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 18763866,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38117093,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38117093,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38117093,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38117093,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 38117093,
+          "Category": "Tickets",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19865817,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19865817,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19865817,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19865817,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19865817,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 20475970,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arizona State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22165941,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22165941,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22165941,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22165941,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22165941,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Arkansas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 36372783,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 36372783,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 36372783,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 36372783,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Auburn"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 15856430,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "California"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 14350681,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Central Florida"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 14613858,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 14613858,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 14613858,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 14613858,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Cincinnati"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 60859475,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 60859475,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Clemson"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13302241,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 13302241,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Colorado"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 61364272,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 61364272,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 61364272,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 61364272,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Florida"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 42279406,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Florida State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 74315945,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Georgia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 13749430,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Georgia Tech"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 7575763,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 7575763,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 7575763,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 7575763,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big-12",
+          "Amount": 7575763,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Houston"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40963477,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40963477,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40963477,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Illinois"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 61660023,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 61660023,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 61660023,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Indiana"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 32595258,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 32595258,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 32595258,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 32595258,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 32595258,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 23036374,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Iowa State"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 27261662,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28109188,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kansas State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 27938279,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Kentucky"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30413091,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 30413091,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Louisville"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 75929827,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 75929827,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 75929827,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "LSU"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9990560,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9990560,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9990560,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9990560,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9990560,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Maryland"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 44258631,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 54135871,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Michigan State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24382112,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 24382112,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Minnesota"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 34409478,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Mississippi"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 22612228,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Mississippi State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 29555704,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 29555704,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 29555704,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Missouri"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9570734,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Nebraska"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 20615893,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 14899856,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "North Carolina State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 63582228,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Ohio State"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 43180134,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 43180134,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 43180134,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 43180134,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oklahoma"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 19600676,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oklahoma State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40282784,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40282784,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40282784,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 40282784,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Oregon"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 39248059,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Penn State"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16911593,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Purdue"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9005919,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 9005919,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Rutgers"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 33833869,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "South Carolina"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35483274,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35483274,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35483274,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35483274,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 35483274,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Tennessee"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 77974073,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 77974073,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 77974073,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 77974073,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 77974073,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 54204110,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 54204110,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "SEC",
+          "Amount": 54204110,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas A&M"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28947020,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28947020,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28947020,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28947020,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28947020,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Texas Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 18522470,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 18522470,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 18522470,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 18522470,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 18522470,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "UCLA"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 28843990,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Utah"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 62646969,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 25882821,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 25882821,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 25882821,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 25882821,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "ACC",
+          "Amount": 25882821,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Virginia Tech"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 28037008,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Washington"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14672758,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14672758,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14672758,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14672758,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big 12",
+          "Amount": 14672758,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "West Virginia"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16536509,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16536509,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16536509,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16536509,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Wisconsin"
+        },
+        {
+          "2024 Conf": "Big Ten",
+          "Amount": 16536509,
+          "Category": "Contributions",
+          "NIL Collectives Public Universities": "Wisconsin"
+        }
+      ]
+    },
+    {"name": "param_38_store"},
+    {
+      "name": "source_0",
+      "source": "_server_source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!length(data(\"param_38_store\")) || vlSelectionTest(\"param_38_store\", datum)"
+        },
+        {
+          "type": "project",
+          "fields": [
+            "2024 Conf",
+            "Amount",
+            "Category",
+            "NIL Collectives Public Universities"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "stack",
+          "field": "Amount",
+          "groupby": ["NIL Collectives Public Universities"],
+          "sort": {"field": ["Category"], "order": ["ascending"]},
+          "as": ["Amount_start", "Amount_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Amount\"]) && isFinite(+datum[\"Amount\"])"
+        },
+        {
+          "type": "project",
+          "fields": [
+            "2024 Conf",
+            "Amount",
+            "Amount_end",
+            "Amount_start",
+            "Category",
+            "NIL Collectives Public Universities"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "source_0_y_domain_NIL Collectives Public Universities",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": ["NIL Collectives Public Universities"],
+          "fields": ["Amount"],
+          "ops": ["sum"],
+          "as": ["sort_field"]
+        },
+        {
+          "type": "project",
+          "fields": ["NIL Collectives Public Universities", "sort_field"]
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "unit",
+      "value": {},
+      "on": [
+        {"events": "pointermove", "update": "isTuple(group()) ? group() : unit"}
+      ]
+    },
+    {
+      "name": "param_38_2024_Conf",
+      "value": null,
+      "bind": {
+        "input": "select",
+        "options": ["Big-12", "Big 12", "ACC", "Big Ten", "SEC"],
+        "name": "Select Conference: "
+      }
+    },
+    {
+      "name": "param_38",
+      "update": "vlSelectionResolve(\"param_38_store\", \"union\", true, true)"
+    },
+    {
+      "name": "param_38_tuple",
+      "update": "param_38_2024_Conf !== null ? {fields: param_38_tuple_fields, values: [param_38_2024_Conf]} : null"
+    },
+    {
+      "name": "param_38_tuple_fields",
+      "value": [{"type": "E", "field": "2024 Conf"}]
+    },
+    {
+      "name": "param_38_modify",
+      "on": [
+        {
+          "events": {"signal": "param_38_tuple"},
+          "update": "modify(\"param_38_store\", param_38_tuple, true)"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "name": "marks",
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "x": {"field": "Amount_end", "scale": "x"},
+          "tooltip": {
+            "signal": "{\"2024 Conf\": isValid(datum[\"2024 Conf\"]) ? datum[\"2024 Conf\"] : \"\"+datum[\"2024 Conf\"], \"Category\": isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"], \"Amount\": format(datum[\"Amount\"], \"\")}"
+          },
+          "fill": {"field": "Category", "scale": "color"},
+          "height": {"signal": "max(0.25, bandwidth('y'))"},
+          "x2": {"field": "Amount_start", "scale": "x"},
+          "y": {"field": "NIL Collectives Public Universities", "scale": "y"}
+        }
+      },
+      "interactive": true,
+      "style": ["bar"]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {"data": "data_0", "fields": ["Amount_start", "Amount_end"]},
+      "range": [0, {"signal": "width"}],
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "y",
+      "type": "band",
+      "domain": {
+        "data": "source_0_y_domain_NIL Collectives Public Universities",
+        "field": "NIL Collectives Public Universities",
+        "sort": {"op": "max", "field": "sort_field", "order": "descending"}
+      },
+      "range": [0, {"signal": "height"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Contributions", "Funding", "Tickets"],
+      "range": ["#0d43cb", "#f39d3a", "#c61015"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "domain": false,
+      "ticks": false,
+      "gridScale": "y",
+      "aria": false,
+      "maxExtent": 0,
+      "grid": true,
+      "minExtent": 0,
+      "orient": "bottom",
+      "labels": false,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "title": "Amount ($)",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "grid": false,
+      "zindex": 0,
+      "orient": "bottom"
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "zindex": 0,
+      "grid": false,
+      "title": "School"
+    }
+  ],
+  "title": {
+    "text": "Total Support Breakdown by School and Source",
+    "frame": "group"
+  },
+  "style": "cell",
+  "legends": [{"title": "Source", "fill": "color", "symbolType": "square"}],
+  "background": "white",
+  "width": 700,
+  "height": 500,
+  "padding": 5,
+  "config": {}
+};
+    vegaEmbed("#vis", spec, {mode: "vega"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
